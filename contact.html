@@ -48,75 +48,29 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/vehicules.html">Les véhicules</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/club.html">Le club</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/equipe.html">L'équipe</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/contact.html">Contact</a>
-                    </li>
-                    <!--
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Portfolio
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Le club
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                            <a class="dropdown-item" href="/fonctionnement.html">Fonctionnement</a>
+                            <a class="dropdown-item" href="/membres.html">Les membres</a>
+                            <a class="dropdown-item" href="/equipe.html">L'équipe</a>
                         </div>
                     </li>
--->
-                    <!--
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                            <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                            <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
                     </li>
--->
-                    <!--
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Other Pages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                            <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                            <a class="dropdown-item" href="faq.html">FAQ</a>
-                            <a class="dropdown-item" href="404.html">404</a>
-                            <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#connexionModal">Connexion <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></a>
                     </li>
--->
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <!-- Page Content -->
     <div class="container">
-
-        <!-- Page Heading/Breadcrumbs -->
-<!--
-        <h1 class="mt-4 mb-3">Contact <small>Subheading</small></h1>
-
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item active">Contact</li>
-        </ol>
--->
         
         <!-- Content Row -->
         <div class="row first-row">
@@ -145,31 +99,35 @@
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
             <div class="col-lg-8 mb-4">
-                <h3>Nous envoyer un message</h3>
+                
+                <h5 class="send-message-title">Nous envoyer un message</h5>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Votre nom :</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Indiquez votre nom.">
-                            <p class="help-block"></p>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Indiquez votre nom">
+                            <p class="help-block help-text"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Votre numéro de téléphone :</label>
-                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Indiquez votre numéro de téléphone.">
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Indiquez votre numéro de téléphone">
+                            <p class="help-block help-text"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Votre adresse email :</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Indiquez votre adresse email.">
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Indiquez votre adresse email">
+                            <p class="help-block help-text"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Votre message :</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Tapez votre message." maxlength="999" style="resize:none"></textarea>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Tapez votre message" maxlength="999" style="resize:none"></textarea>
+                            <p class="help-block help-text"></p>
                         </div>
                     </div>
                     <div id="success"></div>
@@ -183,6 +141,46 @@
 
     </div>
     <!-- /.container -->
+    
+    <!-- connexionModal -->
+        <div class="modal fade" id="connexionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header-custom">
+                        <p class="modal-title" id="exampleModalLabel">Se connecter</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <img src="/assets/turtle_green_200x102.png" class="img-fluid signin-img">
+                                    <form class="signin-form">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="passwordInput" placeholder="Mot de passe">
+                                        </div>
+                                        <button type="button" class="btn signin-btn btn-lg btn-success">Connexion</button>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox"> Se souvenir de moi
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer-custom">
+                        <p>Pas encore membre ? <a href="/contact.html"><button type="button" class="btn btn-secondary">Contactez-nous</button></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- newsletter -->
     <div class="py-5 bg-inverse">

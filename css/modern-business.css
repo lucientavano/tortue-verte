@@ -44,3 +44,232 @@ body {
     width: 100%;
     border: none;
 }
+
+/* --------- Isotop --------------- */
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+.ui-group {
+  display: inline-block;
+}
+
+.ui-group h3 {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 32px;
+  margin-right: 0.2em;
+  font-size: 16px;
+}
+
+.ui-group .button-group {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* ---- Grid ---- */
+
+.grid {
+  max-width: auto;
+}
+
+/* clear fix */
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* car-filter (= car card) */
+
+.car-filter {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+    padding: 10px;
+  float: left;
+}
+
+@media (min-width: 992px) {
+    
+    .car-filter {
+        width: 25%;
+        height: auto;
+        margin: 0px;
+        padding: 10px;
+        float: left;
+    }
+}
+
+/* filter-row (= card area) */
+
+.filter-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px
+}
+
+@media (min-width:576px) {
+    .filter-row {
+        margin-right: -10px;
+        margin-left: -10px
+    }
+}
+
+@media (min-width:768px) {
+    .filter-row {
+        margin-right: -10px;
+        margin-left: -10px
+    }
+}
+
+@media (min-width:992px) {
+    .filter-row {
+        margin-right: -10px;
+        margin-left: -10px
+    }
+}
+
+@media (min-width:1200px) {
+    .filter-row {
+        margin-right: -10px;
+        margin-left: -10px
+    }
+}
+
+/* signin pop-up */
+
+img.signin-img {
+    padding: 1rem 1rem 1rem;
+    margin: auto;
+    display: block;
+    width: 150px;
+}
+
+form.signin-form {
+    max-width: 350px;
+    margin: auto;
+}
+
+button.signin-btn {
+/*
+    color: #ffffff;
+    background-color: #00CF98;
+*/
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.modal-footer-custom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 15px 0px 0px 0px;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    background-color: #eceeef;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.modal-footer-custom>:not(:first-child) {
+    margin-left: .25rem
+}
+
+.modal-footer-custom>:not(:last-child) {
+    margin-right: .25rem
+}
+
+.modal-header-custom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    background-color: #eceeef;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* contact form */
+
+.send-message-title {
+    padding-bottom: 10px;
+}
+
+.help-text {
+    color: red;
+}
