@@ -14,6 +14,14 @@ body {
     }
 }
 
+/* ----------- hr-custom ---------- */
+
+.hr-custom {
+  border-color: #5CB85C;
+  border-width: 3px;
+  max-width: 50px;
+}
+
 .carousel-item {
     height: 65vh;
     min-height: 300px;
@@ -264,7 +272,7 @@ button.signin-btn {
     border-top-right-radius: 5px;
 }
 
-/* contact form */
+/* ------------ contact form ----------------- */
 
 .send-message-title {
     padding-bottom: 10px;
@@ -272,4 +280,62 @@ button.signin-btn {
 
 .help-text {
     color: red;
+}
+
+.team-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* ------------ accordion ----------------- */
+
+.accordion-card {
+    margin-bottom: 5px;
+}
+
+/* ------------ Header ----------------- */
+
+header.masthead {
+    background: url('/assets/cars/callista-ranelagh.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header.masthead > .overlay {
+    padding: 5rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 992px) {
+    header.masthead > .overlay {
+        padding: 12rem 0;
+    }
+}
+
+/* ------------ Sections ----------------- */
+
+.section1 {
+    background-color: #f9f9f9;
+}
+
+.section3 {
+    background-color: #f9f9f9;
+}
+
+/* ------------ Sprecial card ----------------- */
+
+.card-plus {
+    background-color: #f9f9f9;
+}
+
+.concept_icon {
+    width: auto;
+    height: 100px
+}
+
+.btn-services-landing-page {
+    margin-bottom: 20px;
 }
