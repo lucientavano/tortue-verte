@@ -77,52 +77,40 @@
             <p class="lead">Exclusivement réservés à l'usage de nos membres et de leurs proches, les véhicules sont intégralement gérés par le club (achat, gardiennage, entretien, réparation, revente) et mis à disposition à la demande.</p>
             <a href="/fonctionnement.html"><button class="btn btn-success btn-lg">En savoir plus</button></a>
         </header>
+        <!-- /.Jumbotron Header -->
         
+        <!-- Filters -->
 
+        <div class="filters">
+
+            <div class="ui-group">
+                <h3>Catégorie</h3>
+                <div class="button-group js-radio-button-group" data-filter-group="car-category">
+                    <button class="button btn is-checked" data-filter="">Toutes</button>
+                    <button class="button btn" data-filter=".convertible">Cabriolet</button>
+                    <button class="button btn" data-filter=".coupe">Coupé</button>
+                    <button class="button btn" data-filter=".sedan">Berline</button>
+                </div>
+            </div>
+            <div class="ui-group">
+                <h3>Utilisation</h3>
+                <div class="button-group js-radio-button-group" data-filter-group="car-purpose">
+                    <button class="button btn is-checked" data-filter="">Toutes</button>
+                    <button class="button btn" data-filter=".tourism">Tourisme</button>
+                    <button class="button btn" data-filter=".sport">Sport</button>
+                    <button class="button btn" data-filter=".racing">Racing</button>
+                </div>
+            </div>
+
+        </div>
+        
         <!-- Cars -->
-        <div class="row first-row text-center">
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="/assets/cars/honda-s800.png" alt="Honda S800 Coupé (1967)">
-                    <div class="card-block">
-                        <h4 class="card-title">Honda S800</h4>
-                        <p class="card-text">Une sonnorité et un design qui font tourner les têtes.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="grid filter-row text-center">
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="car-filter racing convertible">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="/assets/cars/austin-mini.png" alt="Austin Mini (1991)">
-                    <div class="card-block">
-                        <h4 class="card-title">Austin Mini</h4>
-                        <p class="card-text">Indémodable, attachante, et toujours aussi fun !</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="/assets/cars/renault-dauphine.png" alt="">
-                    <div class="card-block">
-                        <h4 class="card-title">Dauphine Gordini</h4>
-                        <p class="card-text">L'arme fatale pour un Rally Monte-Carlo Historique !</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="/assets/cars/callista-ranelagh-front.png" alt="">
+                    <img class="card-img-top img-fluid" src="/assets/cars/callista-ranelagh-front.png" alt="Callista Ranelagh Panhard">
                     <div class="card-block">
                         <h4 class="card-title">Callista Ranelagh</h4>
                         <p class="card-text">Ecrire sa légende, en participant au Mans Classic.</p>
@@ -132,54 +120,219 @@
                     </div>
                 </div>
             </div>
-
-        </div>
-        <!-- /.row -->
-        <div class="row text-center">
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="car-filter sport convertible">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="/assets/cars/bsa.png" alt="BSA">
+                    <img class="card-img-top img-fluid" src="/assets/cars/lamborghini-gallardo-spyder.png" alt="Lamborghini Gallardo">
                     <div class="card-block">
-                        <h4 class="card-title">BSA</h4>
-                        <p class="card-text">Un voyage dans le temps, les cheveux au vent !</p>
+                        <h4 class="card-title">Gallardo Spyder</h4>
+                        <p class="card-text">Tenter de dompter 520 chevaux italiens.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver <i class="fa fa-lock" aria-hidden="true"></i></a>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="/assets/cars/citroen-ami6.png" alt="Citroën Ami 6 (1965)">
-                    <div class="card-block">
-                        <h4 class="card-title">Ami 6 Berline</h4>
-                        <p class="card-text">Le charme de la 2CV, le style de la DS, et un "Z" !</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver <i class="fa fa-lock" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="car-filter sport convertible">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="/assets/cars/lotus-elise.png" alt="Lotus Elise">
                     <div class="card-block">
                         <h4 class="card-title">Lotus Elise</h4>
-                        <p class="card-text">La quintessence de la voiture de sport anglaise.</p>
+                        <p class="card-text">Faire rimer légèreté avec sportivité.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver <i class="fa fa-lock" aria-hidden="true"></i></a>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter racing convertible">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/formule-renault.png" alt="Formule Renault">
+                    <div class="card-block">
+                        <h4 class="card-title">Formule Renault</h4>
+                        <p class="card-text">Pour la course, la vraie, l'ultime.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter sport convertible">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/porsche-911-convertible.jpg" alt="Porsche 911">
+                    <div class="card-block">
+                        <h4 class="card-title">Porsche 911</h4>
+                        <p class="card-text">Avoir rendez-vous avec la reine des routes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter racing sedan">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/renault-dauphine.png" alt=" Renault Dauphine Gordini">
+                    <div class="card-block">
+                        <h4 class="card-title">Dauphine Gordini</h4>
+                        <p class="card-text">L'arme fatale pour un Rally Monte-Carlo Historique !</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter sport coupe">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/honda-s800.png" alt="Honda S800">
+                    <div class="card-block">
+                        <h4 class="card-title">Honda S800</h4>
+                        <p class="card-text">Une sonnorité et un design qui font tourner les têtes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter tourism convertible">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/bsa.png" alt="BSA Scout">
+                    <div class="card-block">
+                        <h4 class="card-title">BSA Scout</h4>
+                        <p class="card-text">Un voyage dans le temps, les cheveux au vent !</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter tourism sedan">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/citroen-ami6.png" alt="Citroën Ami 6 Berline">
+                    <div class="card-block">
+                        <h4 class="card-title">Citroën Ami 6</h4>
+                        <p class="card-text">Le charme de la 2CV, avec le style de la DS.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter racing convertible">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/racer-500-AGS.png" alt="Racer 500 AGS Henri Julien">
+                    <div class="card-block">
+                        <h4 class="card-title">Racer 500 AGS</h4>
+                        <p class="card-text">4 roues et un volant, what else ?</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter tourism convertible">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/aps3-sara.jpg" alt="APS3 Sara">
+                    <div class="card-block">
+                        <h4 class="card-title">APS3 Sara</h4>
+                        <p class="card-text">Revrivre Le Mans des années 30.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter tourism sedan">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/renault-4cv.png" alt="Renault 4CV">
+                    <div class="card-block">
+                        <h4 class="card-title">Renault 4CV</h4>
+                        <p class="card-text">Des lignes généreuses et un caractère toujours joueur.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+<!--
+            <div class="car-filter sport coupe">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/renault-clio-16s.jpg" alt="Renault Clio 16S">
+                    <div class="card-block">
+                        <h4 class="card-title">Renault Clio 16S</h4>
+                        <p class="card-text">Pour les amateurs de youngtimers.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+-->
+            <div class="car-filter sport coupe">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/golf-gti-1.jpg" alt="Golf GTi I">
+                    <div class="card-block">
+                        <h4 class="card-title">Golf GTi I</h4>
+                        <p class="card-text">Redoutablement efficace, sans l'air d'y toucher.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+<!--
+            <div class="car-filter tourism coupe">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/austin-mini.png" alt="Austin Mini">
+                    <div class="card-block">
+                        <h4 class="card-title">Austin Mini</h4>
+                        <p class="card-text">Indémodable, attachante, et toujours aussi fun !</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#connexionModal">Réserver  <i class="fa fa-lock" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+-->
+            <div class="car-filter sport convertible">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/porsche-911-targa.png" alt="Porsche 911 Targa">
+                    <div class="card-block">
+                        <h4 class="card-title">Porsche 911 Targa</h4>
+                        <p class="card-text">[ En cours de restauration dans nos atteliers ]</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary">Indisponible  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter sport coupe">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/alpine-v6-gt.png" alt="Alpine V6 GT">
+                    <div class="card-block">
+                        <h4 class="card-title">Alpine V6 GT</h4>
+                        <p class="card-text">[ En cours de restauration dans nos atteliers ]</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary">Indisponible  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-filter tourism sedan">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/assets/cars/facel-vega-facel-3.png" alt="Facel Vega Facel III">
+                    <div class="card-block">
+                        <h4 class="card-title">Facel Vega Facel III</h4>
+                        <p class="card-text">[ En cours de restauration dans nos atteliers ]</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary">Indisponible  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-            </div>
-
         </div>
-        <!-- /.row -->
+
+        <!-- /Isotope -->
+
         
 
         <hr>
@@ -270,7 +423,7 @@
             <br>
         </div>
     </div>
-    <!-- /.newsletter -->s
+    <!-- /.newsletter -->
 
     <!-- Footer -->
     <footer class="py-5 bg-success">
@@ -284,8 +437,10 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/Isotope/isotope.pkgd.js"></script>
 
     <!-- Custom JavaScript -->
+    <script src="/js/filter.js"></script>
 
 </body>
 
